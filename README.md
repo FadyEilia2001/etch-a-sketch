@@ -24,6 +24,7 @@ Neon-inspired, playful, and bold.
 
 **Requirements (V1)**  
 To keep scope controlled:
+
 - 16×16 grid inside a fixed container
 - Hover/drag paints cells with the current color
 - Color selection via swatches (not the native color picker)
@@ -39,70 +40,78 @@ To keep scope controlled:
 - [ ] Clear/reset option
 - [ ] Optional inspirations section below the grid
 
-**Non-Goals (for V1)**  
-- This project will not take more than a few days to complete.  
-- No chasing endless improvements or adding extra ideas mid-build.  
-- No advanced features such as responsive design or mobile gestures.  
-- No saving or exporting drawings (may be added later).  
+**Non-Goals (for V1)**
+
+- This project will not take more than a few days to complete.
+- No chasing endless improvements or adding extra ideas mid-build.
+- No advanced features such as responsive design or mobile gestures.
+- No saving or exporting drawings (may be added later).
 
 ---
 
 ### 3. Structure & Naming
 
-- Header → `header`  
-- Controls → `controls`  
-- Grid container → `grid-container`  
-- Grid cell → `cell`  
-- Footer → `footer`  
+- Header → `header`
+- Controls → `controls`
+- Grid container → `grid-container`
+- Grid cell → `cell`
+- Footer → `footer`
 
 ---
 
 ### 4. UI Tokens
 
-**Colors**  
-- Background solid: `#520075`  
-- Background gradient: `radial-gradient(circle, hsla(282, 100%, 23%, 1) 0%, rgba(0, 0, 0, 1) 68%)`  
-- Accent purple: `#520075`  
-- [See the Color Palette](COLOR.md)  
-- [Initial color image](./imgs/color-picker.png)  
+**Colors**
 
-**Fonts**  
-- Audiowide, sans-serif  
-- Expletus Sans, sans-serif  
+- Background solid: `#520075`
+- Background gradient: `radial-gradient(circle, hsla(282, 100%, 23%, 1) 0%, rgba(0, 0, 0, 1) 68%)`
+- Accent purple: `#520075`
+- [See the Color Palette](COLOR.md)
+- [Initial color image](./imgs/color-picker.png)
 
-**Spacing scale**  
-- 8px / 16px / 24px  
-- 0.5rem / 1rem / 1.5rem  
+**Fonts**
 
-**Border radius**  
-- 2px  
+- Audiowide, sans-serif
+- Expletus Sans, sans-serif
 
-**Shadows**  
-- `0 6px 16px rgba(0, 0, 0, 0.35)`  
+**Spacing scale**
+
+- 8px / 16px / 24px
+- 0.5rem / 1rem / 1.5rem
+
+**Border radius**
+
+- 2px
+
+**Shadows**
+
+- `0 6px 16px rgba(0, 0, 0, 0.35)`
 
 ---
 
 ### 5. User Interactions & States
 
-- Current color selection  
-- Fixed grid size (16×16)  
-- Mouse down vs. mouse up state (to allow click-and-drag painting)  
-- Reset button clears all cells  
-- Optional rainbow mode  
+- Current color selection
+- Fixed grid size (16×16)
+- Mouse down vs. mouse up state (to allow click-and-drag painting)
+- Reset button clears all cells
+- Optional rainbow mode
 
 ---
 
 ### 6. File Plan
 
-- `index.html`  
-- `style.css`  
-- `script.js`  
-- `imgs/`  
+- `index.html`
+- `style.css`
+- `script.js`
+- `imgs/`
 
 ---
 
 ### 7. Definition of Done
 
-- [ ] Works on desktop at a fixed width (single breakpoint)  
-- [ ] No console errors  
-- [ ] README updated with description and screenshot  
+- [ ] Works on desktop at a fixed width (single breakpoint)
+- [ ] No console errors
+- [ ] README updated with description and screenshot
+
+In this project, I practiced DOM manipulation, event handling, and CSS styling. I learned how to dynamically build a grid, handle mouse events for painting, and manage state (color, reset). This project gave me confidence in tying JavaScript and CSS together to create an interactive UI.
