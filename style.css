@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Expletus+Sans:ital,wght@0,400..700;1,400..700&display=swap");
+/* title -  font-family: "Audiowide", sans-serif;
+font-family: "Expletus Sans", sans-serif; */
+
+:root {
+  --bg-solid: #520075;
+  --accent-1: #f03c7b; /* magenta */
+  --accent-2: #00e5ff; /* cyan (optional) */
+
+  --text-1: #ffffff;
+  --text-2: #cccccc;
+  --text-muted: #8a8a8a;
+
+  --surface: #16121b;
+  --border: #2a2a2a;
+  --divider: #1e1e1e;
+
+  --btn-primary: #f03c7b;
+  --btn-primary-hover: #d4356d;
+  --btn-primary-active: #bf2f63;
+  --btn-primary-text: #0b0b0b;
+
+  --shadow-card: 0 6px 16px rgba(0, 0, 0, 0.35);
+  --glow-magenta: 0 0 18px rgba(240, 60, 123, 0.55);
+  --glow-cyan: 0 0 18px rgba(0, 229, 255, 0.45);
+
+  --radius-s: 6px;
+  --radius-m: 12px;
+
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+}
+
+/* Remove default margin/padding and set box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Give a consistent font and background */
+body {
+  font-family: "Expletus Sans", sans-serif;
+  background: radial-gradient(circle, var(--bg-solid) 0%, #000000 100%);
+  line-height: 1.5;
+}
+
+/* Make images behave */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove default list styles */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Remove default link underline */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Reset button styles a bit */
+button {
+  font: inherit;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
