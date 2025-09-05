@@ -3,8 +3,8 @@
 font-family: "Expletus Sans", sans-serif; */
 
 :root {
-  --bg-solid: #520075;
-  --accent-1: #f03c7b; /* magenta */
+  --bg-solid: #1f032c;
+  --accent-1: #c9557d; /* magenta */
   --accent-2: #00e5ff; /* cyan (optional) */
 
   --text-1: #ffffff;
@@ -41,11 +41,6 @@ font-family: "Expletus Sans", sans-serif; */
 }
 
 /* Give a consistent font and background */
-body {
-  font-family: "Expletus Sans", sans-serif;
-  background: radial-gradient(circle, var(--bg-solid) 0%, #000000 100%);
-  line-height: 1.5;
-}
 
 /* Make images behave */
 img {
@@ -71,4 +66,137 @@ button {
   background: none;
   border: none;
   cursor: pointer;
+}
+
+/* End of reset */
+
+body {
+  font-family: "Expletus Sans", sans-serif;
+  background: radial-gradient(circle, var(--bg-solid), #000);
+  line-height: 1.5;
+  min-height: 100vh;
+  color: var(--text-1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  padding: var(--space-2);
+}
+
+/* Main starts here */
+main {
+  border: 1px solid var(--surface);
+  box-shadow: 0 0 5px 1px rgba(240, 60, 123, 0.1);
+  flex: 1;
+  display: flex;
+  min-width: 80%;
+  justify-content: space-around;
+  align-items: center;
+  margin: var(--space-1);
+  border-radius: var(--radius-m);
+}
+
+.header-title {
+  color: var(--accent-1); /* neon pink accent */
+  text-shadow: 0 0 0px var(--accent-1), 0 0 0px var(--accent-1),
+    0 0 0px var(--accent-1), 0 0 20px var(--accent-1);
+  font-family: "Audiowide", sans-serif;
+}
+
+/* controls section */
+.controls-container {
+  height: 600px;
+  /* border: 2px solid white; */
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.color-text {
+  font-size: 2rem;
+  padding: var(--space-4);
+}
+
+input {
+  justify-self: center;
+  height: 60px;
+  width: 80%;
+  outline: none;
+  border: none;
+  border-radius: var(--radius-m);
+  box-shadow: 0px 0px 10px 2px var(--accent-1);
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0; /* Removes any internal padding that might create a border-like effect */
+}
+
+input[type="color"]::-webkit-color-swatch {
+  border: none;
+}
+
+#reset {
+  background-color: var(--btn-primary);
+  padding: var(--space-2);
+  border-radius: var(--radius-m);
+  color: var(--btn-primary-text);
+  cursor: pointer;
+  transition: all 0.5 ease;
+}
+
+#reset:hover {
+  background-color: var(--btn-primary-hover);
+  color: #ccc;
+  box-shadow: 0 0 12px rgba(240, 60, 123, 0.6);
+}
+
+#reset:active {
+  background: var(--bg-solid);
+  transform: scale(0.96);
+}
+
+/* focus (keyboard) */
+#reset:focus {
+  outline: 2px solid #f03c7b;
+}
+
+/* disabled */
+#reset:disabled {
+  background: #2a2a2a;
+  color: #777;
+  cursor: not-allowed;
+  box-shadow: none;
+  opacity: 0.6;
+}
+
+/* grid section */
+#grid-container {
+  width: 600px;
+  height: 600px;
+  border: 2px solid var(--border);
+  box-shadow: 0 0 18px 2px rgba(240, 60, 123, 0.55);
+}
+
+/* footer section */
+
+footer {
+  justify-self: end;
+  background-color: var(--bg-solid);
+  border-top: 1px solid rgba(240, 60, 123, 0.3); /* subtle neon pink line */
+  padding: var(--space-3);
+  min-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: #eee;
 }

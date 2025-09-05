@@ -7,6 +7,31 @@
     <title>Etch A Sketch Game</title>
   </head>
   <body>
-    <h2>Hello World</h2>
+    <header class="header">
+      <h1 class="header-title">Etch A Sketch</h1>
+    </header>
+    <!-- End of header - beginning of main section -->
+    <main>
+      <!-- div contols for swatches -->
+      <div class="controls-container">
+        <h2 class="controls-title">Controls</h2>
+        <label for="color">
+          <input name="color" id="color" type="color" value="#A9A9A9" />
+          <p class="color-text">Pick a color</p>
+        </label>
+        <button id="reset">Reset your art work</button>
+      </div>
+      <!-- End of controls for swatches -->
+
+      <div id="grid-container">Grids will go here</div>
+    </main>
+    <!-- end of main section and beginning of footer -->
+
+    <footer>
+      <div class="right-footer">
+        Built with HTML, CSS, and JavaScript – 2025
+      </div>
+      <div class="left-footer">Remember: Ctrl+Z doesn’t work here 😉</div>
+    </footer>
   </body>
 </html>
