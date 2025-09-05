@@ -186,10 +186,22 @@ input[type="color"]::-webkit-color-swatch {
   height: 600px;
   border: 2px solid var(--border);
   box-shadow: 0 0 18px 2px rgba(240, 60, 123, 0.55);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.cell {
+  width: 20px;
+  height: 20px;
+  flex: 1 0 auto;
+  border: 1px solid gray;
+  cursor: pointer;
 }
 
 /* footer section */
-
 footer {
   justify-self: end;
   background-color: var(--bg-solid);
